@@ -18,12 +18,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "first-app",\
         "reference": "workspace:packages/first-app"\
+      },\
+      {\
+        "name": "my-app",\
+        "reference": "workspace:packages/my-app"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["first-app", ["workspace:packages/first-app"]],\
+      ["my-app", ["workspace:packages/my-app"]],\
       ["root-workspace-0b6124", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -1990,6 +1995,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ms", "npm:2.1.3"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["my-app", [\
+        ["workspace:packages/my-app", {\
+          "packageLocation": "./packages/my-app/",\
+          "packageDependencies": [\
+            ["my-app", "workspace:packages/my-app"],\
+            ["eslint", "npm:8.25.0"],\
+            ["eslint-config-next", "virtual:bbf09b2bda89f7986f26cd7631a0620d52a709231cfa74ea4c3fb368e26a95cf763b1db6fb186783073c0a3470a88ea1c45804b4e8d8653aa67d1274e29ec7da#npm:12.3.1"],\
+            ["next", "virtual:bbf09b2bda89f7986f26cd7631a0620d52a709231cfa74ea4c3fb368e26a95cf763b1db6fb186783073c0a3470a88ea1c45804b4e8d8653aa67d1274e29ec7da#npm:12.3.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:bbf09b2bda89f7986f26cd7631a0620d52a709231cfa74ea4c3fb368e26a95cf763b1db6fb186783073c0a3470a88ea1c45804b4e8d8653aa67d1274e29ec7da#npm:18.2.0"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["nanoid", [\

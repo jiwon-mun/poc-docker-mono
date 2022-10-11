@@ -1571,6 +1571,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"my-app@workspace:packages/my-app":
+  version: 0.0.0-use.local
+  resolution: "my-app@workspace:packages/my-app"
+  dependencies:
+    eslint: 8.25.0
+    eslint-config-next: 12.3.1
+    next: 12.3.1
+    react: 18.2.0
+    react-dom: 18.2.0
+  languageName: unknown
+  linkType: soft
+
 "nanoid@npm:^3.3.4":
   version: 3.3.4
   resolution: "nanoid@npm:3.3.4"
